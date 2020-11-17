@@ -8,6 +8,7 @@
 <body>
     <script>
         const text = prompt("Podaj tekst");
+
         console.log(text.length); //dlugosc tekstu
         console.log(text.charAt(2)) //znak o indexie 2
         console.log(text[2]); //to samo co wyzej zapisane tak jak tablice
@@ -19,6 +20,44 @@
         console.log(text.substring(3, 6)); //od znaku o indexie 3 do znaku o indexie 6
         console.log(text.replace("witaj", "siema")); //zamienia "witaj" na "siema"
         console.log(text.slice(2,5)); //kawalek tekstu od znaku o indexie 2 do 5
+
+        const metod = parseInt(prompt("Podaj metode: \n 1. .leanth \n 2. .charAt() \n 3. .toUpperCase() \n 4. .toLowerCase \n 5. .indexOf() \n 6. .substr() \n 7. .substring() \n 8. .replace()"));
+
+        switch (true) {
+            case metod == 1:
+                const length = text.length;
+                alert("Tekst ma długuść: "+ length);
+                break;
+            case metod == 2:
+                const index = parseInt(prompt("Podaj index znaku:"));
+                alert(`Znak o indexie ${index} to: ${text.charAt(index)}`);
+                break;
+            case metod == 3:
+                alert(`Zmiana tekstu na wielkie litery: ${text.toUpperCase}`);
+                break;
+            case metod == 4:
+                alert(`Zmiana tekstu na małe litery: ${text.toLowerCase}`);
+                break;
+            case metod == 5:
+                const word = prompt("Podaj słowo:");
+                alert(`Słowo ${word} zaczyna sie znakiem o indexie ${text.indexOf(word)}`);
+                break;
+            case metod == 6:
+                const substr = parseInt(prompt("Podaj index:"));
+                alert(`Za znakiem o indexie ${substr} znajduje sie: ${text.substr(substr)}`);
+                break;
+            case metod == 7:
+                const substring1 = parseInt(prompt("Podaj pierwszy index:"));
+                const substring2 = parseInt(prompt("Podaj drugi index:"));
+                alert(`Pomiedzy indexem ${substring1} a ${substring2} znajduje sie: ${text.substring(substring1,substring2)}`);
+                break;
+            case metod == 8:
+                const word1 = prompt("Słowo które chcesz zamienić:");
+                const word2 = prompt("Słowo na które chcesz zamienić:");
+                alert(`Zamieniłeś słowo ${word1} na ${word2}: ${text.replace(word1,word2)}`);
+                break;
+        }
+
 
 
 
