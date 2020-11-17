@@ -7,7 +7,6 @@
 </head>
 <body>
     <script>
-        for(let i=1; i>0; i++){
         const text = prompt("Podaj tekst");
 
         console.log(text.length); //dlugosc tekstu
@@ -21,6 +20,8 @@
         console.log(text.substring(3, 6)); //od znaku o indexie 3 do znaku o indexie 6
         console.log(text.replace("witaj", "siema")); //zamienia "witaj" na "siema"
         console.log(text.slice(2,5)); //kawalek tekstu od znaku o indexie 2 do 5
+
+        for(let i=1; i>0; i++){
 
         const metod = parseInt(prompt("Podaj metode: \n 1. .leanth \n 2. .charAt() \n 3. .toUpperCase() \n 4. .toLowerCase() \n 5. .indexOf() \n 6. .substr() \n 7. .substring() \n 8. .replace()"));
 
