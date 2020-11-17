@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        for(let i=1; i>0; i++){
         const text = prompt("Podaj tekst");
 
         console.log(text.length); //dlugosc tekstu
@@ -21,7 +22,7 @@
         console.log(text.replace("witaj", "siema")); //zamienia "witaj" na "siema"
         console.log(text.slice(2,5)); //kawalek tekstu od znaku o indexie 2 do 5
 
-        const metod = parseInt(prompt("Podaj metode: \n 1. .leanth \n 2. .charAt() \n 3. .toUpperCase() \n 4. .toLowerCase \n 5. .indexOf() \n 6. .substr() \n 7. .substring() \n 8. .replace()"));
+        const metod = parseInt(prompt("Podaj metode: \n 1. .leanth \n 2. .charAt() \n 3. .toUpperCase() \n 4. .toLowerCase() \n 5. .indexOf() \n 6. .substr() \n 7. .substring() \n 8. .replace()"));
 
         switch (true) {
             case metod == 1:
@@ -33,10 +34,10 @@
                 alert(`Znak o indexie ${index} to: ${text.charAt(index)}`);
                 break;
             case metod == 3:
-                alert(`Zmiana tekstu na wielkie litery: ${text.toUpperCase}`);
+                alert(`Zmiana tekstu na wielkie litery: ${text.toUpperCase()}`);
                 break;
             case metod == 4:
-                alert(`Zmiana tekstu na małe litery: ${text.toLowerCase}`);
+                alert(`Zmiana tekstu na małe litery: ${text.toLowerCase()}`);
                 break;
             case metod == 5:
                 const word = prompt("Podaj słowo:");
@@ -57,9 +58,7 @@
                 alert(`Zamieniłeś słowo ${word1} na ${word2}: ${text.replace(word1,word2)}`);
                 break;
         }
-
-
-
+        }
 
         
     </script>
