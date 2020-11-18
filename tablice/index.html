@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Bartlomiej Papis">
+    <title>Tablice</title>
+</head>
+<body>
+    <script>
+        //Zad 1
+        const tab1 = ["Bartek", 1, "Oliwier", 2, "PAI", 3.1415, "siedem", "osiem", 9, "diesiec10"];
+        for(let i = 0; i<tab1.length; i++){
+            console.log(tab1[i]);
+        }
+
+        //Zad2
+        const tab2 = [];
+        // tab2.push(tab1.reverse());
+        for(let i = 0; i<tab1.length; i++){
+            tab2.unshift(tab1[i]);
+        }
+        for(let i = 0; i<tab2.length; i++){
+            console.log(tab2[i]);
+        }
+
+        //Zad 3
+        const tab3 = [];
+        for(let i = 1; i<=20; i++){
+            if(i%3==0 && i%5==0){
+                tab3.push(i);
+            }
+        }
+        for(let i = 0; i<tab3.length; i++){
+            console.log(tab3[i]);
+        }
+
+
+    </script>
+</body>
+</html>
