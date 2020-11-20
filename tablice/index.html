@@ -35,6 +35,35 @@
             console.log(tab3[i]);
         }
 
+        //Zad 4
+        const tab4 = [];
+        for(let i = 0; i<4; i++){
+            let liczba = parseInt(prompt("Podaj liczbe:"));
+            tab4.unshift(liczba);
+        }
+        for(let i = 0; i<tab4.length; i++){
+            console.log(tab4[i]);
+        }
+
+        //Zad 5
+        const tab5 = tab3.concat(tab4);
+        for(let i = 0; i<tab5.length; i++){
+            console.log(tab5[i]);
+        }
+
+        //Zad 6
+        const tab6 = tab5.sort();
+        for(let i = 0; i<tab6.length; i++){
+            console.log(tab6[i]);
+        }
+
+        //Zad 7
+        const tab7 = tab6.slice(3, 6);
+        for(let i = 0; i<tab7.length; i++){
+            console.log(tab7[i]);
+        }
+
+
 
     </script>
 </body>
