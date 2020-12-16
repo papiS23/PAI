@@ -1,0 +1,15 @@
+*{
+    font-family: monospace;
+}
+:root{
+    --color: red;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    label,button{
+        margin: 2%;
+    }
+}

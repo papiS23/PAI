@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Bartłomiej Papis">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Choinka</title>
+</head>
+<body>
+    <div class="container">
+        <label for="rows">Ilość wierszy: <input type="number" min="1" id="rows"></label>
+        <label for="colour">Kolor gwiazdek: <input type="color" id="colour"></label>
+        <button id="button">Rysuj</button>
+        <main></main>
+    </div>
+    <script>
+       const rows = document.querySelector('#rows');
+       const start = document.querySelector('#button');
+       const main = document.querySelector('main');
+       const color1 = document.querySelector('#color')
+       
+       start.addEventListener("click", ()=>{
+           let tree = '';
+           let d = 1;
+           for(let i=0; i<rows.value; i++){
+               for(let k = (rows.value)-1; k>i; k--){
+                   tree += '&nbsp';
+                }
+                for(let k = 1; k<=d; k++){
+                    tree += '*'
+                }
+                tree += '<br>';
+                d=d+2;
+            }
+            main.innerHTML = tree;
+            main.style.setProperty("--color", color1.value);
+       })
+    </script>
+</body>
+</html>
