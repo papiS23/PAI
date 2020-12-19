@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +10,25 @@
 <body>
     <div class="container">
         <label for="rows">Ilość wierszy: <input type="number" min="1" id="rows"></label>
-        <label for="colour">Kolor gwiazdek: <input type="color" id="colour"></label>
+        <label for="colour">Kolor gwiazdek: <input type="color" id="color"></label>
         <button id="button">Rysuj</button>
-        <main></main>
+        <div class="center">
+            <main></main>
+        </div>
     </div>
     <script>
-       const rows = document.querySelector('#rows');
-       const start = document.querySelector('#button');
-       const main = document.querySelector('main');
-       
-       start.addEventListener("click", ()=>{
-           let tree = '';
-           let pien = '';
-           let d = 1;
-           for(let i=0; i<rows.value; i++){
-               for(let k = (rows.value)-1; k>i; k--){
-                   tree += '&nbsp';
+        const rows = document.querySelector('#rows');
+        const start = document.querySelector('#button');
+        const main = document.querySelector('main');
+        const get_color = document.querySelector('#color');
+        
+        start.addEventListener("click", ()=>{
+            let tree = '';
+            let pien = '';
+            let d = 1;
+            for(let i=0; i<rows.value; i++){
+                for(let k = rows.value; k>i; k--){
+                    tree += '&nbsp';
                 }
                 for(let k = 1; k<=d; k++){
                     tree += '*'
@@ -33,12 +36,26 @@
                 tree += '<br>';
                 d=d+2;
             }
-            for(let j=0; j<rows.value; j++){
+            for(let j=0; j<rows.value - 1; j++){
                 pien += '&nbsp';
             }
-            pien += "|  |";
+            pien += "|   |";
+            pien += '<br>';
+            for(let j=0; j<rows.value - 1; j++){
+                pien += '&nbsp';
+            }
+            pien += "|   |";
             main.innerHTML = tree;
-       })
+            main.style.color = get_color.value;
+
+            const p = document.createElement('p');
+            p.innerHTML += pien;
+            main.appendChild(p);
+
+            const random_color = '#' + Math.random().toString(16).substr(2,6);
+            console.log(random_color);
+            
+        })
     </script>
 </body>
 </html>

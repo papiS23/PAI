@@ -1,1 +1,1 @@
-*{font-family:monospace}.container{width:100%}.container label,.container button{display:block;padding:.5em}.container main{display:flex;justify-content:center;align-items:center}
+*{font-family:monospace}.container{width:100vw}.container label,.container button{display:block;padding:.5em}.container .center{display:flex;justify-content:center;align-items:center}.container .center main{margin:auto}.container .center main p{margin-top:0px;color:brown}

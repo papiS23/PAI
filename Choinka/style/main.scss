@@ -2,14 +2,21 @@
     font-family: monospace;
 }
 .container{
-    width: 100%;
+    width: 100vw;
     label, button{
         display: block;
         padding: .5em;
     }
-    main{
+    .center{
         display: flex;
         justify-content: center;
         align-items: center;
-    };
+        main{
+            margin: auto;
+            p{
+                margin-top: 0px;
+                color: brown;
+            }
+        }
+    }
 }
