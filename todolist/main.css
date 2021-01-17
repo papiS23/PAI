@@ -144,3 +144,16 @@ body .todo-container .todo-list .fall {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
 }
+
+@media (max-width: 600px) {
+  body form {
+    width: 80%;
+    margin: auto;
+  }
+  body form input {
+    font-size: 1rem;
+  }
+  body form button {
+    font-size: 1rem;
+  }
+}
