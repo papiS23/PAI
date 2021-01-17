@@ -21,6 +21,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+       .todo-add-item{
         input{
             padding: .5rem;
             font-size: 2rem;
@@ -40,6 +41,7 @@ body{
             background: #d88771;
             color: white;
         }
+       }
         .select{
             margin: 1rem;
             position: relative;
@@ -129,13 +131,32 @@ body{
 @media(max-width: 600px){
     body{
         form{
-            width: 80%;
+            width: 80vw;
             margin: auto;
-            input{
-                font-size: 1rem;
+            flex-direction: column;
+            .todo-add-item{
+                input{
+                    font-size: 1rem;
+                }
+                button{
+                    font-size: 1rem;
+                }
             }
-            button{
-                font-size: 1rem;
+            .select{
+                select{
+                    padding: .5rem;
+                }
+            }
+            .select:after{
+                padding: .5rem;
+            }
+        }
+        .todo-container{
+            .todo-list{
+                min-width: 70%;
+                .todo{
+                    font-size: 1rem;
+                }
             }
         }
     }
