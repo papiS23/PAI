@@ -12,9 +12,14 @@
 }
 
 .container .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .center main {
@@ -25,3 +30,4 @@
   margin-top: 0px;
   color: brown;
 }
+/*# sourceMappingURL=main.css.map */
