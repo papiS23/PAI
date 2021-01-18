@@ -44,6 +44,7 @@ body form .todo-add-item input {
   font-size: 2rem;
   border: none;
   background: white;
+  background-color: #fff;
 }
 
 body form .todo-add-item button {
@@ -104,9 +105,7 @@ body .todo-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  min-height: 50vh;
 }
 
 body .todo-container .todo-list {
@@ -176,6 +175,24 @@ body .todo-container .todo-list .fall {
   opacity: 0;
 }
 
+body footer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer p a {
+  color: white;
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   body form {
     width: 80vw;
@@ -205,6 +222,12 @@ body .todo-container .todo-list .fall {
   }
   body .todo-container .todo-list .todo {
     font-size: 1rem;
+  }
+  body footer p {
+    font-size: 0.5rem;
+  }
+  body footer p a {
+    font-size: 0.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
