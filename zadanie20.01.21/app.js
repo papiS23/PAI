@@ -8,7 +8,8 @@ button.addEventListener('click', ()=>{
     
     //Name check
     if(!(isNaN(firstLetter[0]))){
-        result.innerHTML = 'imiona nie zawieraja liczb';
+        inputs[0].value = '';
+        alert('Pierwszy znak imienia nie może być cyfrą');
     }else{
         console.log('pierwszy znak nie jest liczba');
     }
