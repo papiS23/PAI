@@ -22,26 +22,29 @@ body{
         justify-content: center;
         align-items: center;
        .todo-add-item{
-        input{
-            padding: .5rem;
-            font-size: 2rem;
-            border: none;
-            background: white;
-            background-color: #fff;
-        }
-        button{
-            padding: .5rem;
-            font-size: 2rem;
-            border: none;
-            background: white;
-            color: #d88771;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        button:hover{
-            background: #d88771;
-            color: white;
-        }
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+            input{
+                padding: .5rem;
+                font-size: 2rem;
+                border: none;
+                background: white;
+                background-color: #fff;
+            }
+            button{
+                padding: .5rem;
+                font-size: 2rem;
+                border: none;
+                background: white;
+                color: #d88771;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            button:hover{
+                background: #d88771;
+                color: white;
+            }
        }
         .select{
             margin: 1rem;
@@ -149,6 +152,7 @@ body{
             flex-direction: column;
             .todo-add-item{
                 input{
+                    max-width: 80vw;
                     font-size: 1rem;
                 }
                 button{
