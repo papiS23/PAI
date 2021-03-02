@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #282a4d;
+}
+
+.container .header {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+}
+
+.container .header__title {
+  font-size: 100px;
+  color: white;
+  margin-bottom: 3%;
+}
+
+.container .header__main-input {
+  font-size: 3em;
+}
+
+.container .header__submit {
+  font-size: 3em;
+  padding: 0 .4em;
+}
+
+.container .header__time {
+  font-size: .7em;
+}
+
+.container .header__label {
+  color: white;
+  font-size: 2em;
+}
+
+.container .main__todo-list {
+  width: 50vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main__todo-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  width: 50%;
+  margin-bottom: 2%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.container .main__todo-div--completed {
+  opacity: 30%;
+  text-decoration: line-through;
+}
+
+.container .main__todo-div--fall {
+  -webkit-transform: rotateZ(20deg);
+          transform: rotateZ(20deg);
+}
+
+.container .main__todo-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 30px;
+  margin-left: 2%;
+}
+
+.container .main__check-btn {
+  padding: 2em;
+  background-color: #29ad08;
+}
+
+.container .main__check-btn:focus {
+  outline: none;
+}
+
+.container .main__check-icon {
+  width: 20px;
+  pointer-events: none;
+}
+
+.container .main__trash-btn {
+  padding: 2em;
+  background-color: #be0b0b;
+}
+
+.container .main__trash-btn:focus {
+  outline: none;
+}
+
+.container .main__trash-icon {
+  width: 20px;
+  pointer-events: none;
+}
+/*# sourceMappingURL=main.css.map */

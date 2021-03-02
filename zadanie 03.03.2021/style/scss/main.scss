@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(40, 42, 77);
+    .header{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+        &__title{
+            font-size: 100px;
+            color: white;
+            margin-bottom: 3%;
+        }
+        &__main-input{
+            font-size: 3em;
+        }
+        &__submit{
+            font-size: 3em;
+            padding: 0 .4em;
+        }
+        &__time{
+            font-size: .7em;
+        }
+        &__label{
+            color: white;
+            font-size: 2em;
+        }
+    }
+    .main{
+        &__todo-list{
+            width: 50vw;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__todo-div{
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            width: 50%;
+            margin-bottom: 2%;
+            transition: all .5s ease;
+            &--completed{
+                opacity: 30%;
+                text-decoration: line-through;
+            }
+            &--fall{
+                transform: rotateZ(20deg);
+            }
+        }
+        &__todo-text{
+            flex: 1;
+            font-size: 30px;
+            margin-left: 2%;
+        }
+        &__check-btn{
+            padding: 2em;
+            background-color: rgb(41, 173, 8);
+            &:focus{
+                outline: none;
+            }
+        }
+        &__check-icon{
+            width: 20px;
+            pointer-events: none;
+        }
+        &__trash-btn{
+            padding: 2em;
+            background-color: rgb(190, 11, 11);
+            &:focus{
+                outline: none;
+            }
+        }
+        &__trash-icon{
+            width: 20px;
+            pointer-events: none;
+        }
+    }
+}
