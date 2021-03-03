@@ -20,6 +20,7 @@ submit.addEventListener('submit', e=>{
 
     saveLocalTodos(text);//zapisanie w localstorage
     mainInput.value = '';
+    timeInput.value = '';
 
     const todoChechBtn = document.createElement('button');
     todoChechBtn.classList.add('main__check-btn');
