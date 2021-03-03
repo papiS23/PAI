@@ -124,7 +124,7 @@ function getTodos(){
         todoDiv.appendChild(trashdButton);
 
         todoList.appendChild(todoDiv);
-    })
+    });
 }
 
 function removeLocalTodos(todo){

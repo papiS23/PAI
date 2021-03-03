@@ -67,6 +67,7 @@
         &__check-btn{
             padding: 2em;
             background-color: rgb(41, 173, 8);
+            border: none;
             &:focus{
                 outline: none;
             }
@@ -78,6 +79,7 @@
         &__trash-btn{
             padding: 2em;
             background-color: rgb(190, 11, 11);
+            border: none;
             &:focus{
                 outline: none;
             }

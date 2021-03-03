@@ -105,6 +105,7 @@
 .container .main__check-btn {
   padding: 2em;
   background-color: #29ad08;
+  border: none;
 }
 
 .container .main__check-btn:focus {
@@ -119,6 +120,7 @@
 .container .main__trash-btn {
   padding: 2em;
   background-color: #be0b0b;
+  border: none;
 }
 
 .container .main__trash-btn:focus {
