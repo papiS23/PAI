@@ -9,7 +9,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: #282a4d;
+  background-color: #3c1547;
 }
 
 .container .header {
@@ -89,8 +89,9 @@
 }
 
 .container .main__todo-div--fall {
-  -webkit-transform: rotateZ(20deg);
-          transform: rotateZ(20deg);
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
 
 .container .main__todo-text {

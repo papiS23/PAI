@@ -7,7 +7,7 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(40, 42, 77);
+    background-color: rgb(60, 21, 71);
     .header{
         height: 30vh;
         display: flex;
@@ -55,7 +55,8 @@
                 text-decoration: line-through;
             }
             &--fall{
-                transform: rotateZ(20deg);
+                transform: translateY(8rem) rotateZ(20deg);
+                opacity: 0;
             }
         }
         &__todo-text{

@@ -1,9 +1,9 @@
 const mainInput = document.querySelector('.header__main-input');
 const timeInput = document.querySelector('.header__time');
-const submit = document.querySelector('.header__submit');
+const submit = document.querySelector('.header__container');
 const todoList = document.querySelector('.main__todo-list');
 
-submit.addEventListener('click', e=>{
+submit.addEventListener('submit', e=>{
     e.preventDefault();
     //nie przeladowuje strony
 
@@ -39,7 +39,9 @@ submit.addEventListener('click', e=>{
 
     todoTrashBtn.addEventListener('click',()=>{
         todoDiv.classList.add('main__todo-div--fall');
-        // todoDiv.remove();
+        todoDiv.addEventListener('transitionend',()=>{
+            todoDiv.remove();
+        });
     });
 
     todoList.appendChild(todoDiv);
