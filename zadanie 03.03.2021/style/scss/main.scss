@@ -7,7 +7,7 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(60, 21, 71);
+    background: linear-gradient(120deg, #5dd9e2,#4a75d1);
     .header{
         height: 30vh;
         display: flex;
@@ -22,13 +22,24 @@
         }
         &__main-input{
             font-size: 3em;
+            border: none;
         }
         &__submit{
             font-size: 3em;
             padding: 0 .4em;
+            transition: all ease .5s;
+            border: none;
+            &:hover{
+                color: white;
+                background-color: rgb(46, 88, 179);
+            }
+            &:focus{
+                outline: none;
+            }
         }
         &__time{
             font-size: .7em;
+            border: none;
         }
         &__label{
             color: white;
@@ -78,7 +89,7 @@
         }
         &__trash-btn{
             padding: 2em;
-            background-color: rgb(190, 11, 11);
+            background-color: rgb(221, 32, 32);
             border: none;
             &:focus{
                 outline: none;

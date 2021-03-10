@@ -9,7 +9,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: #3c1547;
+  background: linear-gradient(120deg, #5dd9e2, #4a75d1);
 }
 
 .container .header {
@@ -38,15 +38,29 @@
 
 .container .header__main-input {
   font-size: 3em;
+  border: none;
 }
 
 .container .header__submit {
   font-size: 3em;
   padding: 0 .4em;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  border: none;
+}
+
+.container .header__submit:hover {
+  color: white;
+  background-color: #2e58b3;
+}
+
+.container .header__submit:focus {
+  outline: none;
 }
 
 .container .header__time {
   font-size: .7em;
+  border: none;
 }
 
 .container .header__label {
@@ -119,7 +133,7 @@
 
 .container .main__trash-btn {
   padding: 2em;
-  background-color: #be0b0b;
+  background-color: #dd2020;
   border: none;
 }
 
