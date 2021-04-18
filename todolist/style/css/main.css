@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -15,40 +14,22 @@ body {
 body header {
   font-size: 1.5rem;
   min-height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 body form {
   min-height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 body form .todo-add-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 body form .todo-add-item input {
@@ -66,7 +47,6 @@ body form .todo-add-item button {
   background: white;
   color: #d88771;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -82,8 +62,6 @@ body form .select {
 }
 
 body form .select select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   outline: none;
   border: none;
@@ -101,7 +79,6 @@ body form .select:after {
   right: 0;
   padding: 1rem;
   pointer-events: none;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -111,12 +88,8 @@ body form .select:hover:after {
 }
 
 body .todo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   min-height: 50vh;
 }
 
@@ -130,23 +103,14 @@ body .todo-container .todo-list .todo {
   background: white;
   color: black;
   font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.5s ease;
+  justify-content: space-between;
+  align-items: center;
   transition: all 0.5s ease;
 }
 
 body .todo-container .todo-list .todo .todo-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 0rem 0.5rem;
 }
 
@@ -182,22 +146,15 @@ body .todo-container .todo-list .completed {
 }
 
 body .todo-container .todo-list .fall {
-  -webkit-transform: translateY(8rem) rotateZ(20deg);
-          transform: translateY(8rem) rotateZ(20deg);
+  transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
 }
 
 body footer {
   height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 body footer p a {
@@ -209,10 +166,7 @@ body footer p a {
   body form {
     width: 80vw;
     margin: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   body form .todo-add-item input {
     max-width: 80vw;

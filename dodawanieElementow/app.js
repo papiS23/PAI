@@ -1,24 +1,24 @@
-const button = document.querySelector('.add-item');
-const itemList = document.querySelector('.elements-container');
+const itemList = document.querySelector(".container__list");
+const btn = document.querySelector(".container__button");
 let counter = 0;
 
-button.addEventListener('click', ()=>{
-    const newP = document.createElement('p');
-    newP.innerText = `Tekst w akapicie nr ${counter++} (kliknij aby mnie usunąć)`;
-    newP.classList.add('p-item');
+btn.addEventListener("click", () => {
+  const p = document.createElement("p");
+  p.innerText = `Tekst w akapicie nr ${counter++} (kliknij aby mnie usunąć)`;
 
-    const newImg = document.createElement('img');
-    newImg.src = `https://picsum.photos/id/${counter}/300/200`;
-    newImg.classList.add('img-item');
+  const img = document.createElement("img");
+  img.src = `https://picsum.photos/id/${counter}/300/200`;
+  img.classList.add("container__img");
 
-    const itemDiv = document.createElement('div');
-    itemDiv.classList.add('item-div');
+  const mainDiv = document.createElement("div");
+  mainDiv.classList.add("container__div");
 
-    itemDiv.appendChild(newP);
-    itemDiv.appendChild(newImg);
-    itemList.appendChild(itemDiv);
+  mainDiv.appendChild(p);
+  img;
+  mainDiv.appendChild(img);
+  itemList.appendChild(mainDiv);
 
-    itemDiv.addEventListener('click', e=>{
-        itemDiv.remove();
-    })
+  mainDiv.addEventListener("click", (e) => {
+    mainDiv.remove();
+  });
 });
