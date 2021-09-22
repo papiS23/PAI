@@ -22,5 +22,7 @@ submitBtn.addEventListener("click", function () {
   if (roznica < 0) {
     resultP.innerText = "Data końcowa jest nieprawidłowa";
   } else {
+    const days = roznica / (1000 * 60 * 60 * 24);
+    resultP.innerText = `Roznica wynosi ${days} ${days == 1 ? "dzien" : "dni"}`;
   }
 });
