@@ -8,7 +8,7 @@ setInterval(function () {
   let minute = now.getMinutes();
   let seconds = now.getSeconds();
 
-  let hourDeg = 30 * hour;
+  let hourDeg = 30 * (hour > 12 ? hour - 12 : hour);
   let minuteDeg = 6 * minute;
   let secondDeg = 6 * seconds;
 

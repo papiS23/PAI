@@ -48,7 +48,7 @@
 }
 
 .minute-line {
-    height: 7em;
+    height: 8em;
     width: 5px;
     background-color: #000;
     position: absolute;
@@ -63,6 +63,6 @@
     background-color: #f00;
     position: absolute;
     bottom: 10px;
-    z-index: 12;
+    z-index: 10;
     transform-origin: 50% 100%;
 }
