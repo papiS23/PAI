@@ -4,9 +4,9 @@ const secondLine = document.querySelector(".second-line");
 
 setInterval(function () {
   let now = new Date();
-  let hour = now.getHours();
-  let minute = now.getMinutes();
-  let seconds = now.getSeconds();
+  let seconds = now.getMilliseconds() / 1000 + now.getSeconds();
+  let minute = seconds / 60 + now.getMinutes();
+  let hour = minute / 60 + now.getHours();
 
   let hourDeg = 30 * (hour > 12 ? hour - 12 : hour);
   let minuteDeg = 6 * minute;
@@ -15,4 +15,4 @@ setInterval(function () {
   hourLine.style = `transform: rotate(${hourDeg}deg)`;
   minuteLine.style = `transform: rotate(${minuteDeg}deg)`;
   secondLine.style = `transform: rotate(${secondDeg}deg)`;
-}, 1000);
+}, 1);
