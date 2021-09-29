@@ -15,4 +15,4 @@ setInterval(function () {
   hourLine.style = `transform: rotate(${hourDeg}deg)`;
   minuteLine.style = `transform: rotate(${minuteDeg}deg)`;
   secondLine.style = `transform: rotate(${secondDeg}deg)`;
-}, 1);
+}, 60);

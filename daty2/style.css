@@ -15,7 +15,11 @@
 }
 
 .clock {
-    background-color: #fff;
+    background-image: url(./clockbg3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #fff; */
     width: 20em;
     height: 20em;
     border: 3px solid black;
