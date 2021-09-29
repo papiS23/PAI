@@ -4,7 +4,7 @@ const secondLine = document.querySelector(".second-line");
 
 setInterval(function () {
   let now = new Date();
-  let seconds = now.getMilliseconds() / 1000 + now.getSeconds();
+  let seconds = now.getSeconds();
   let minute = seconds / 60 + now.getMinutes();
   let hour = minute / 60 + now.getHours();
 
