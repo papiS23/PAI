@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" style="display: flex; flex-direction: column; align-items: flex-start;">
+        <label>Podaj rozmiar tekstu w procentach: <input type="number" id="fontSize">%</label>
+        <select id="select">
+            <option value="normal">prosty</option>
+            <option value="italic">italic</option>
+        </select>
+        <p>Jakim kolorem sformatowac tekst? Wybierz przycisk</p>
+        <div class="buttons">
+            <button class="colorBtns" style="padding: .5em; background-color: red;" data-color="red"></button>
+            <button class="colorBtns" style="padding: .5em; background-color: green;" data-color="green"></button>
+            <button class="colorBtns" style="padding: .5em; background-color: blue;" data-color="blue"></button>
+        </div>
+        <p id="result">To jest przykład paragrafu, który może być sformatowany</p>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
