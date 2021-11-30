@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="date" name="date1" id="date1">
+    <input type="date" name="date2" id="date2">
+    <input type="submit" value="porównaj" id="submit">
+    <p id="result"></p>
+    <script>
+        const date1 = document.querySelector('#date1');
+        const date2 = document.querySelector('#date2');
+        const submit = document.querySelector('#submit');
+        const result = document.querySelector('#result');
+
+        submit.addEventListener('click', function () {
+            console.log(date1.value);
+            console.log(date2.value);
+        });
+    </script>
+</body>
+
+</html>
