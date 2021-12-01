@@ -20,8 +20,23 @@
         const result = document.querySelector('#result');
 
         submit.addEventListener('click', function () {
-            console.log(date1.value);
-            console.log(date2.value);
+            const date1Value = new Date(date1.value);
+            const date2Value = new Date(date2.value);
+
+            const difference = (date2Value - date1Value) / (1000 * 60 * 60 * 24);
+            let komunikat;
+
+            if (difference > 10 && difference < 20) {
+                komunikat = ' - OK';
+            } else if (difference > 20 && difference < 50) {
+                komunikat = ' - Super';
+            } else if (difference > 50) {
+                komunikat = ' - Rewelacyjnie';
+            } else {
+                komunikat = '';
+            }
+
+            result.innerText = `${difference}${komunikat}`;
         });
     </script>
 </body>

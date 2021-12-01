@@ -7,6 +7,7 @@ const container = document.querySelector(".zadania");
 btns[0].addEventListener("click", function () {
   zadanie1(numbers);
 });
+
 //Zadanie2
 btns[1].addEventListener("click", function () {
   const input = document.createElement("input");
@@ -26,6 +27,7 @@ btns[1].addEventListener("click", function () {
     p.innerText = `${input.value} minuty to ${zadanie2(input.value)} sekund`;
   });
 });
+
 //Zadanie3
 btns[2].addEventListener("click", function () {
   const p = document.createElement("p");
@@ -35,6 +37,7 @@ btns[2].addEventListener("click", function () {
   });
   container.appendChild(p);
 });
+
 //Zadanie4
 btns[3].addEventListener("click", function () {
   const input1 = document.createElement("input");
