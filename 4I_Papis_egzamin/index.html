@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfigurator wyposażenia</title>
+    <link rel="stylesheet" href="./styl.css">
+</head>
+<body>
+    <div class="sekcjaglowna">
+        <img src="./baner.jpg" alt="baner" class="baner">
+        <aside class="lewy">
+            <form action="#">
+                <div class="kreska"></div>
+                <h2>Kolor</h2>
+                <select name="kolory" id="koloryselect" class="polewyboru">
+                    <option value="szary.png" selected>szary</option>
+                    <option value="niebieski.png">niebieski</option>
+                    <option value="czerwony.png">czerwony</option>
+                    <option value="zolty.png">żółty</option>
+                    <option value="zielony.png">zielony</option>
+                </select>
+                <div class="kreska"></div>
+                <h2>Felgi</h2>
+                <label for="">Stalowe<input type="radio" name="felga" checked class="felgi polewyboru" value="stalowa"></label>
+                <label for="">Aluminiowe<input type="radio" name="felga" class="felgi polewyboru" value="aluminiowa"></label>
+                <div class="kreska"></div>
+                <h2>Doposażenie</h2>
+                <label for="">Czujniki parkowania<input type="checkbox" class="doposazenie polewyboru" value="park"></label>
+                <label for="">Climatronic<input type="checkbox" class="doposazenie polewyboru" value="clima"></label>
+                <label for="">Nawigacja<input type="checkbox" class="doposazenie polewyboru" value="nawi"></label>
+                <div class="kreska"></div>
+            </form>
+        </aside>
+        <main class="prawy">
+            <h1>Twój samochód</h1>
+            <img src="./szary.png" alt="foto" class="prawefoto">
+            <h1>Wycena</h1>
+            <p class="cena">Cena bazowa 75000zł</p>
+        </main>
+        <footer class="stopka">
+            <p>Autor strony: <span>03241405492</span></p>
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

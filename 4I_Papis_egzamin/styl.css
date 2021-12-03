@@ -1,0 +1,60 @@
+body{
+    font-family: Verdana;
+    background-color: #7D7F85;
+}
+.sekcjaglowna{
+    width: 800px;
+    margin: auto;
+}
+.baner{
+    height: 200px;
+    width: 100%;
+}
+.lewy{
+    background-color: #F8C013;
+    text-align: center;
+    height: 600px;
+    width: 30%;
+    float: left;
+}
+.prawy{
+    background-color: #C2C3C2;
+    text-align: center;
+    color: #886829;
+    height: 560px;
+    width: 70%;
+    padding-top: 40px;
+    float: right;
+}
+.stopka{
+    background-color: #1A3B98;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    clear: both;
+}
+.prawefoto{
+    width: 75%;
+    margin: auto;
+}
+.cena{
+    margin-top: 30px;
+    margin-right: 50px;
+    text-align: right;
+}
+.kreska{
+    height: 1px;
+    background-color: #fff;
+    margin-top: 1em;
+}
+span{
+    font-style: italic;
+}
+.razem{
+    font-size: 20px;
+    text-align: right;
+    padding-right: 2.5em;
+}
+label{
+    display: block;
+}
